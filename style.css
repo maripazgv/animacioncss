@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "clinica";
+    src: url(fonts/PoetsenOne-Regular.otf);
+}
+body{
+    
+    background-color: whitesmoke;
+    font-family: sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.encabezado{
+    background-color: lightskyblue;
+    color: darkgreen;
+    width: 90%;
+    max-width: 1600px;
+    height: 200px;
+    border: 2px solid seagreen; 
+    border-radius: 20%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+h1{
+   
+    left: 220px;
+    padding: 1em 1em;
+    font-family: clinica, sans-serif;
+    font-size: 40px;
+}
+.encabezado img{
+    position: absolute;
+    top: 60px;
+    left: -100px;
+    animation-name: perro;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+  
+}
+@keyframes perro{
+    from{left: -100px;      
+    }
+    to{left: 1000px;
+    }
+    
+}
+.encabezado h1{
+    color: darkgreen;
+    font-size: 45px;
+    position: absolute;
+    left: 80px;
+    top: -10px;
+    animation-name: letras;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+   
+}
+
+@keyframes letras{
+    from{
+        left: 80px;
+        top: -10px;
+    }
+    to{
+        top: 149px;
+    }
+}
